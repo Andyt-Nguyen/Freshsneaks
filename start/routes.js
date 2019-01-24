@@ -18,8 +18,13 @@ const Route = use('Route')
 
 
 Route.get('/', 'PageController.home');
+
 Route.get('/about', 'PageController.about');
+
 Route.get('/products', 'ProductController.index');
+
+Route.get('/:brand/:subcategory/:slug', 'ProductController.show');
+
 Route.get('/products/new-arrivals', 'ProductController.newArrivals');
 
 //User Authentication

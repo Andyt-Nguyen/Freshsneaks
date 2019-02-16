@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +14,21 @@
 */
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
-const Route = use('Route')
-
+const Route = use('Route');
 
 Route.get('/', 'PageController.home');
-
 Route.get('/about', 'PageController.about');
-
+// Product routes
 Route.get('/products', 'ProductController.index');
-
 Route.get('/:brand/:subcategory/:slug', 'ProductController.show');
-
 Route.get('/products/new-arrivals', 'ProductController.newArrivals');
 
-//User Authentication
+// cart
+
+Route.get('/cart/checkout', 'CartController.checkout');
+//Accounts
+Route.get('/account', 'UserController.index');
+Route.get('/account/change-password', 'UserController.changePassword');
+Route.get('/account/orders', 'UserController.orders');
 Route.get('/register', 'UserController.register');
 Route.get('/login', 'UserController.login');

@@ -1,0 +1,105 @@
+@layout('layouts/main')
+
+@section('title')
+Freshsneaks | Checkout
+@endsection
+@section('content')
+<section class="content-area checkout-page">
+  <div class="container">
+    <div class="box-container">
+       <h1>Place Your Order</h1>
+        <hr> 
+      <div class="checkout-grid">
+          <div class="forms">
+            <h3>Billing Information</h3>
+            <form action="">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input id="fname" type="text" name ="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input id="lname" type="text" name ="lname">
+                </div>
+                <div class="form-group">
+                    <label for="address1">Address #1</label>
+                    <input id="address1" type="text" name ="address1">
+                </div>
+                <div class="form-group">
+                    <label for="address2">Address #2</label>
+                    <input id="address2" type="text" name ="address2">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input id="city" type="text" name ="city">
+                </div>
+                <div class="form-group">
+                    <label for="zipcode">Zip-code</label>
+                    <input id="zipcode" type="text" name ="zipcode">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input id="country" type="text" name ="country">
+                </div>
+            </form> 
+            <div class="forms">
+              <h3>Shipping Information</h3>
+              <form action="">
+                  <div class="form-group">
+                      <label for="fname">First Name</label>
+                      <input id="fname" type="text" name ="fname">
+                  </div>
+                  <div class="form-group">
+                      <label for="lname">Last Name</label>
+                      <input id="lname" type="text" name ="lname">
+                  </div>
+                  <div class="form-group">
+                      <label for="address1">Address #1</label>
+                      <input id="address1" type="text" name ="address1">
+                  </div>
+                  <div class="form-group">
+                      <label for="address2">Address #2</label>
+                      <input id="address2" type="text" name ="address2">
+                  </div>
+                  <div class="form-group">
+                      <label for="city">City</label>
+                      <input id="city" type="text" name ="city">
+                  </div>
+                  <div class="form-group">
+                      <label for="zipcode">Zip-code</label>
+                      <input id="zipcode" type="text" name ="zipcode">
+                  </div>
+                  <div class="form-group">
+                      <label for="country">Country</label>
+                      <input id="country" type="text" name ="country">
+                  </div>
+              </form> 
+            </div>
+          </div>
+          <div class="totals">
+              <div class="items">
+                <span>Items:</span>4
+              </div>
+              <div class="tax">
+                <span>Tax:</span>$89.99
+              </div>
+              <div class="shipping">
+                <span>Shipping:</span>$5.99
+              </div>
+              <div class="price">
+                <span>Total Price:</span>$1294.99
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@endsection
+
+@section('javascript')
+  <script> 
+    console.log('hey')
+  
+  </script>
+@endsection
